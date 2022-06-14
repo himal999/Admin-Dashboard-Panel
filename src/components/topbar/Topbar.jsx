@@ -4,7 +4,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import SettingsIcon from '@mui/icons-material/Settings';
 const Topbar = () => {
   return (
-    <div className='flex flex-row w-full justify-between items-center p-4   shadow-xl '>
+    <div className='flex flex-row w-full justify-between items-center p-4  fixed  z-40 shadow-xl '>
         <div className=' text-3xl flex flex-row justify-center items-center'>
           <h2>Admin</h2>
         </div>
