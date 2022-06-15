@@ -3,6 +3,8 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Chart from '../../components/chart/Chart';
 import '../../index.css'
 import {userData} from '../../dummyData'
+import WidgetSm from '../../components/widgetSm/WidgetSm';
+import WidgetLg from '../../components/widgetLg/WidgetLg';
 
 const Home = () => {
   return (
@@ -36,9 +38,11 @@ const Home = () => {
                 <p className='text-slate-800'>compare to last month</p>
             </div>
         </div>
-      
-            <Chart data={userData} title="User  Analytics" grid dataKey="Active User"/>
-     
+        <Chart data={userData} title="User  Analytics" grid dataKey="Active User"/>
+        <div className='flex'>
+            <WidgetSm/>
+            <WidgetLg/>
+        </div>
     </div>
   )
 }
